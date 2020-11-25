@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap');
+body, html{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	/*background: #0c0d0d;*/
+	color: #d7d7d7;
+	font-family: 'Playfair Display', serif;
+	background: #f7f7f7;
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    position: fixed;
+    width: 100%;
+    background: #141726;
+    z-index: 10000;
+
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.nav-links li:hover{
+
+    font-size: 18px;
+}
+.navbar h1{
+    margin: 7px;
+}
+.nav-links a{
+ text-decoration: none;
+ font-family: 'Poppins', sans-serif;
+ font-weight: bold;
+  color: #d7d7d7;
+}
+.navbar nav{
+    padding: 0px 30px;
+}
+/*RESET CSS*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.div-three  img{
+	display: block;
+}
+h1{
+	margin: 0;
+	color: #fff
+}
+button{
+    background: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+/*RESET CSS*/
+.content-1{
+	    height: 100vh;
+	    background-image: url(../img/bg1.png);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-size: cover;
+	    background-position: center;
+	    text-align: center;
+	    display: flex!important;
+	    align-items: center;
+    	justify-content: center;
+    	vertical-align: middle;
+    	flex-wrap: wrap;
+}
+.content-2{
+	padding: 20px;
+	text-align: center;
+    text-align: center;
+    width: 800px;
+    display: block;
+    justify-content: center;
+}
+.content-3{
+	    height: 120px;
+	    background-image: url(../img/bg3.png);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-size: cover;
+	    background-position: center;
+	    text-align: center;
+	    display: flex!important;
+	    align-items: center;
+    	justify-content: center;
+    	vertical-align: middle;
+    	flex-wrap: wrap;
+}
+.content-items {
+    display: block;
+    color: #d7d7d7;
+    text-align: center;
+    width: 100%;
+}
+.multiple-cont {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    width: 100%;
+}
+.item {
+    flex: 1;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #2e2e2e;
+}
+.size-manip{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/*Button Elements*/
+button{
+	background: none;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+.btn-white{
+	background: #fff;
+	padding: 10px 20px;
+	color: #007cad;
+	border-radius: 30px;
+	font-size: 16px;
+	transition: 0.2s;
+	border: solid #fff 1.5px;
+}
+.btn-white:hover{
+	background: transparent;
+	color: #fff;
+}
+/*Font Elements*/
+h1{
+	font-family: 'Poppins', sans-serif;
+}
+.highlight-heading-1{
+	font-size: 40px;
+	font-weight: bolder;
+}
+.content-2 h1,h2,h3{
+	color: #007cad;
+	text-align: center;
+	font-size: 30px;
+}
+.content-2 p{
+	color: #2e2e2e;
+}
+/*Line Design*/
+hr {
+
+    width: 120px;
+  
+    background: #007cad;
+}
+
+/*Wave*/
+.wave-container{
+	bottom: -1px;
+    color: #8ea1e1;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+/*Wave Animation*/
+svg {
+    color: #f7f7f7;
+    bottom: 0;
+    display: block;
+}
+.wavePath-22lfEN {
+    -webkit-animation: waveDividerAnimation-2kPl3C 20s linear infinite alternate;
+    -moz-animation: waveDividerAnimation-2kPl3C 20s linear infinite alternate;
+    animation: waveDividerAnimation-2kPl3C 10s linear infinite alternate;
+}
+/*FORM ELEMENTS*/
+.fifth-cont{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    background: #141726;
+}
+.fourth-cont .item-char{ 
+    width:25%;
+    display: block;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 20px;
+}
+/*Form Elements*/
+.fifth-cont .item-char{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+}
+.fifth-cont p,.fifth-cont h1 {
+    margin:0;
+    color:#fff;
+}
+.fifth-cont p{
+    color : #5dd3ff;
+}
+
+.input-cont{
+    width: 100%;
+    max-width: 350px;
+    border:none;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #202335;
+    padding: 2px;
+    padding-left: 40px;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: #fff;
+    font-family: 'Ropa Sans', sans-serif;
+    position: relative;
+}
+.input-cont::placeholder{
+    font-weight: bold;
+}
+.btn-cont{
+    margin-top: 20px;
+    background-color: #1b75e2;
+    color: #fff;
+    width: 100%;
+    max-width: 385px;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 18px;
+}
+.cont{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cont-icon{
+    position: absolute;
+    z-index: 1;
+    margin-top: 29px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.item-content{
+    width: 100%;
+    position: relative;
+}
+textarea{
+    resize: none;
+    height: 150px!important;
+    padding-top: 20px!important;
+}
+/*Form Elements*/
+@-webkit-keyframes waveDividerAnimation-2kPl3C {
+    0% {
+        d: path("M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z")
+    }
+
+    50% {
+        d: path("M655.558582,28.4898877 C500.191373,61.6062216 422.833785,83.5422763 266.940085,49.8995879 C112.480383,16.5663637 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,49.8995879 C1580.91676,-34.8808285 1438.10804,73.6768193 1148.0266,38.0019829 C857.945166,2.32714659 810.925791,-4.62644617 655.558582,28.4898877 Z")
+    }
+
+    to {
+        d: path("M842.322034,38.0019829 C686.954825,71.1183168 623.386282,53.08497 467.492582,19.4422816 C313.032879,-13.8909426 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,76.8685643 C1512.23604,-35.3595639 1568.70222,67.4289432 1278.62078,31.7541069 C988.539347,-3.92072949 997.689243,4.88564905 842.322034,38.0019829 Z")
+    }
+}
+@-moz-keyframes waveDividerAnimation-2kPl3C {
+    0% {
+        d: path("M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z")
+    }
+
+    50% {
+        d: path("M655.558582,28.4898877 C500.191373,61.6062216 422.833785,83.5422763 266.940085,49.8995879 C112.480383,16.5663637 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,49.8995879 C1580.91676,-34.8808285 1438.10804,73.6768193 1148.0266,38.0019829 C857.945166,2.32714659 810.925791,-4.62644617 655.558582,28.4898877 Z")
+    }
+
+    to {
+        d: path("M842.322034,38.0019829 C686.954825,71.1183168 623.386282,53.08497 467.492582,19.4422816 C313.032879,-13.8909426 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,76.8685643 C1512.23604,-35.3595639 1568.70222,67.4289432 1278.62078,31.7541069 C988.539347,-3.92072949 997.689243,4.88564905 842.322034,38.0019829 Z")
+    }
+}
+
+@keyframes waveDividerAnimation-2kPl3C {
+    0% {
+        d: path("M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z")
+    }
+
+    50% {
+        d: path("M655.558582,28.4898877 C500.191373,61.6062216 422.833785,83.5422763 266.940085,49.8995879 C112.480383,16.5663637 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,49.8995879 C1580.91676,-34.8808285 1438.10804,73.6768193 1148.0266,38.0019829 C857.945166,2.32714659 810.925791,-4.62644617 655.558582,28.4898877 Z")
+    }
+
+    to {
+        d: path("M842.322034,38.0019829 C686.954825,71.1183168 623.386282,53.08497 467.492582,19.4422816 C313.032879,-13.8909426 84.0992497,8.02840272 0,44.7243294 L0,150.727527 L1920,150.727527 L1920,76.8685643 C1512.23604,-35.3595639 1568.70222,67.4289432 1278.62078,31.7541069 C988.539347,-3.92072949 997.689243,4.88564905 842.322034,38.0019829 Z")
+    }
+}
+
+@media (max-width: 900px){
+    .multiple-cont{
+        display: inline;
+    }
+    .fifth-cont{
+        display: block;
+    }
+    .fifth-cont .item-char {
+        width: 100%;
+    }
+    .form-div{
+        padding-bottom: 20px;
+    }
+    .input-cont{
+        width: 80%;
+    }
+}
