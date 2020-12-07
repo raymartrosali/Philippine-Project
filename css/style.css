@@ -29,10 +29,13 @@ body, html{
     font-size: 16px;
     transition: 0.2s;
 }
-.nav-links li:hover{
+.nav-links #homeNav:hover .sub-nav{
+    display: block;
+}
+/*.nav-links li:hover{
 
     font-size: 18px;
-}
+}*/
 .navbar h1{
     margin: 7px;
 }
@@ -44,6 +47,27 @@ body, html{
 }
 .navbar nav{
     padding: 0px 30px;
+}
+.sub-nav{
+    position: fixed;
+    background: none;
+    z-index: 1000;
+    margin-top: -5px;
+    margin-left: -20px;
+    padding: 10px;
+    display: none;
+}
+.sub-nav li{
+    display: inline;
+}
+.sub-nav li div{
+    background: #141726;
+    padding:10px;
+}
+.sub-nav li div:hover{
+    background: #08090e;
+    padding:10px;
+    transition: 0.5s;
 }
 /*RESET CSS*/
 input:focus,
@@ -103,6 +127,44 @@ button{
     	vertical-align: middle;
     	flex-wrap: wrap;
 }
+.content-4{
+        height: 200px;
+        background-image: url(../img/bg1.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        flex-wrap: wrap;
+}
+.content-5{
+    justify-content: center;
+    width: 800px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.content-5 .item-char{
+    padding: 11px;
+}
+.content-5 h1{
+    color: #007cad;
+}
+.content-5 p{
+    color: #2e2e2e;
+    margin: 2px;
+}
+.content-5 img{
+    border-radius: 50%;
+    max-width: 180px;
+    transition: 0.5s;
+    border: 10px solid transparent;
+}
 .content-items {
     display: block;
     color: #d7d7d7;
@@ -151,6 +213,21 @@ button{
 	background: transparent;
 	color: #fff;
 }
+
+.btn-blue{
+    background: #007cad;
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.2s;
+    border: solid #007cad 1.5px;
+}
+.btn-blue:hover{
+    background: transparent;
+    transition: 0.5s;
+    border: solid #fff 1.5px;
+}
 /*Font Elements*/
 h1{
 	font-family: 'Poppins', sans-serif;
@@ -158,6 +235,12 @@ h1{
 .highlight-heading-1{
 	font-size: 40px;
 	font-weight: bolder;
+}
+.highlight-heading-2{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #007cad;
+    text-align: center;
 }
 .content-2 h1,h2,h3{
 	color: #007cad;
