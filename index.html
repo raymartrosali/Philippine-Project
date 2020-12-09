@@ -11,14 +11,23 @@
 	<!-- Lightbox -->
 </head>
 <body>
+	<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    
+    <script src="js/slider.js" type="text/javascript"></script>
+    <style>
+        
+    </style>
 	<header class="navbar">
 		<h1>Logo Here</h1>
 		<nav>
 			<ul class="nav-links">
 				<li id="homeNav">
-					<a href="">Home</a>
+					<a>Home</a>
 					<ul class="sub-nav">
 						<li>
+							<div>
+								<a href="#news">News</a>
+							</div>
 							<div>
 								<a href="#whoweare">Who We Are</a>
 							</div>
@@ -52,6 +61,63 @@
 		<div class="wave-container">
 			<svg class="wave-qsoVIt" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path></svg>
 		</div>
+	</section>
+	<section class="size-manip" id="news">
+		<section class="content-2 ">
+			<h1>
+				News
+			</h1>
+			<hr size="5" align="center">
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+		        <!-- Loading Screen -->
+		        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+		            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+		        </div>
+		        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+		            <div>
+		                <img data-u="image" src="img/011.jpg" />
+		            </div>
+		            <div>
+		                <img data-u="image" src="img/012.jpg" />
+		            </div>
+		            <div>
+		                <img data-u="image" src="img/013.jpg" />
+		            </div>
+		            <div>
+		                <img data-u="image" src="img/014.jpg" />
+		            </div>
+		            <div>
+		                <img data-u="image" src="img/015.jpg" />
+		            </div>
+		            <div>
+		                <img data-u="image" src="img/016.jpg" />
+		            </div>
+		        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">responsive slider</a>
+		        <!-- Bullet Navigator -->
+		        <div data-u="navigator" class="jssorb053" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+		            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+		                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+		                    <path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+		                </svg>
+		            </div>
+		        </div>
+		        <!-- Arrow Navigator -->
+		        <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+		            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+		                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+		                <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+		                <line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+		            </svg>
+		        </div>
+		        <div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+		            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+		                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+		                <polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+		                <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+		            </svg>
+		        </div>
+		    </div>
+		</section>
 	</section>
 	<section class="size-manip" id="whoweare">
 		<section class="content-2 ">
@@ -98,7 +164,7 @@
 			</p>
 		</section>
 	</section>
-	<section class="size-manip" id="members">
+	<section class="size-manip">
 		<div class="content-5 quote-section aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 		<blockquote>
 			<p>Do everything for love. That way there are no little things. Everything is big.</p>
@@ -108,14 +174,14 @@
 	</section>
 	<br>
 	<br>
-	<section class="content-4"  >
+	<section class="content-4" id="members" >
 		<div class="content-items">
 			<h1><font class="highlight-heading-1" style="font-size: 60px">Our Members and<br>Board of Trustees</font></h1>
 		</div>
 	</section>
 	<br><br>
-	<div style="text-align: center;">	
-	<section class=" content-5">
+	<div class ="size-manip" style="text-align: center;">	
+	<section class=" content-5 ">
 
 			<div class="item-char">
 				<div class="item-content">
@@ -175,7 +241,7 @@
 			</div>
 
 	</section>
-	<section class="size-manip" id="pfced">
+	<section class="size-manip">
 		<div class="content-5 quote-section aos-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 		<blockquote>
 			<p>Great holiness consists in carrying out the little duties of each moment.</p>
@@ -186,7 +252,7 @@
 	<br>
 	<br>
 	
-	<section class="size-manip" >
+	<section class="size-manip" id="whoweare">
 		<section class="content-2 ">
 			<h1>
 				PFCED and Opus Dei
@@ -212,98 +278,7 @@
 	</section>
 	<br>
 	<br>
-	<!-- <section id="history"><br><br></section>
-	<section class="content-3" >
-		<div class="content-items">
-			<h1><font class="highlight-heading-1" style="font-size: 60px">HISTORY</font></h1>
-		</div>
-	</section>
-	<section class="size-manip">
-		<section style="width: 800px">
-			<section class="multiple-cont">
-				<div class="item" style="text-align: center;">
-					<img src="img/history.png" width="100%">
-				</div>
-				<div class="item">
-					<p>
-						Philippine Foundation for Cultural and Educational<br>
-						Development, Inc. (PFCED) was incorporated
-						<br>
-						and registered with the SEC on June 25, 1965
-						<br>
-						as a non-stock, not-for-proﬁt organization. The
-						<br>
-						incorporators dreamt of the Foundation as a
-						<br>
-						catalyst for values transformation and education.
-						<br>
-						PFCED committed itself to the promotion of
-						<br>
-						academic excellence, professional proﬁciency, as
-						<br>
-						well as social responsibility among people from all walks of life.
-					</p>
-				</div>
-			</section>
-		</section>
-	</section> -->
 	
-	<!-- <section class="size-manip" id="conference">
-		<section class="content-2">
-			<br><br>
-			<h1>
-				CONFERENCE CENTERS
-			</h1>
-			<hr size="5" align="center">
-			<p>
-				The Foundation set up Conference Centers to serve as venues for the exchange of ideas, to provide an environment for the study of important social questions, and to imbue the consideration of such issues with a Christian outlook. This is achieved through a wide range of activities of an educational, cultural and spiritual nature all aimed at the total development of the person—humanly, professionally, and spiritually.
-			</p>
-			<br>
-			<div>
-		      <a class="example-image-link" href="img/conf1.png" data-lightbox="example-set1" data-title="Latag Conference Center"><img class="example-image" src="img/conf1.png" alt=" " style="width:45%"/></a>
-		      <a class="example-image-link" href="img/conf2.png" data-lightbox="example-set1" data-title="Hilltop Conference Center"><img class="example-image" src="img/conf2.png" alt="" style="width:45%" /></a>
-		    </div>
-		    <br><br>
-			<h1>
-				Makiling Conference Center
-			</h1>
-			<hr size="5" align="center">
-			<p>
-				One of the best-known centers established by the PFCED is the Makiling Conference Center in Calamba, Laguna. Its amenities include conference rooms, chapels and a Marian shrine, living rooms and classrooms, dining facilities, residential areas, a home economics and livelihood development center and a study camp with athletic courts.
-			</p>
-			<br>
-			<div>
-				<a class="example-image-link" href="img/conf3.png" data-lightbox="example-set2" data-title=""><img class="example-image" src="img/conf3.png" alt="" style="width:45%" /></a>
-		      	<a class="example-image-link" href="img/conf4.png" data-lightbox="example-set2" data-title=""><img class="example-image" src="img/conf4.png" alt="" style="width:45%" /></a>
-			</div>
-			<br><br>
-			<h1>
-				Centers for Professionals
-			</h1>
-			<hr size="5" align="center">
-			<p>
-				PFCED’s vision, mission and the goals it had set out to achieve found support from the business community, which believed that good values make good business sense, as well as from professionals in various ﬁelds. In addition, it gained support from international funding agencies.
-			</p>
-			<br>
-			<div>
-				<a class="example-image-link" href="img/conf5.png" data-lightbox="example-set3" data-title="Belair Center"><img class="example-image" src="img/conf5.png" alt="" style="width:45%" /></a>
-		      	<a class="example-image-link" href="img/conf6.png" data-lightbox="example-set3" data-title="Campanilla Center"><img class="example-image" src="img/conf6.png" alt="" style="width:45%" /></a>
-			</div>
-			<br><br>
-			<h1>
-				Belair Center for Professional Women
-			</h1>
-			<hr size="5" align="center">
-			<p>
-				Belair Center provides personal, professional and spiritual formation to women of all ages working in the Makati area. Here working mothers learn work-family life balance techniques, retired professionals share their expertise on various ﬁelds, and young professional women get involved in community outreach projects such as academic tutorials among public school pupils, values education classes among high-schoolers, and career track mentoring among university students.
-			</p>
-			<br>
-			<div>
-				<a class="example-image-link" href="img/conf7.png" data-lightbox="example-set4" data-title=""><img class="example-image" src="img/conf7.png" alt="" style="width:45%" /></a>
-		      	<a class="example-image-link" href="img/conf8.png" data-lightbox="example-set4" data-title=""><img class="example-image" src="img/conf8.png" alt="" style="width:45%" /></a>
-			</div>
-		</section>
-	</section> -->
 	<div class="cont">
 		<div class="fifth-cont">
 			<div class="item-char">
@@ -338,6 +313,8 @@
       AOS.init({
         easing: 'ease-in-out-sine'
       });     
+    </script>
+    <script type="text/javascript">jssor_1_slider_init();
     </script>
 	<!-- Lightbox -->
 </body>
