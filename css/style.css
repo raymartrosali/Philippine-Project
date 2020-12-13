@@ -150,7 +150,29 @@ button{
     position: relative;
 }
 .content-5 .item-char{
-    padding: 11px;
+    width: 50%;
+    display: flex;
+}
+.img-cont{
+    padding: 15px 0px 15px 15px;
+}
+.text-cont{
+    padding: 10px;
+}
+.text-cont p{
+    color: #fff!important;
+}
+.text-cont h1{
+    color: #fff!important;
+}
+.content-5 .item-content{
+    background: #007cad;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
 .content-5 h1{
     color: #007cad;
@@ -161,11 +183,40 @@ button{
 }
 .content-5 img{
     border-radius: 50%;
-    max-width: 180px;
+    max-width: 120px;
     transition: 0.5s;
     border: 5px solid transparent;
 }
 .content-5 img:hover{
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 5px solid #007cad;
+}
+.content-6{
+    justify-content: center;
+    
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.content-6 .item-char{
+    padding: 11px;
+}
+.content-6 h1{
+    color: #007cad;
+}
+.content-6 p{
+    color: #2e2e2e;
+    margin: 2px;
+}
+.content-6 img{
+    border-radius: 50%;
+    max-width: 180px;
+    transition: 0.5s;
+    border: 5px solid transparent;
+}
+.content-6 img:hover{
     border-radius: 50%;
     max-width: 180px;
     transition: 0.5s;
@@ -260,6 +311,10 @@ h1{
 .highlight-heading-2{
     font-size: 40px;
     font-weight: bolder;
+    color: #007cad;
+    text-align: center;
+}
+.text-blue{
     color: #007cad;
     text-align: center;
 }
