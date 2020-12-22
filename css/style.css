@@ -32,6 +32,9 @@ body, html{
 .nav-links #homeNav:hover .sub-nav{
     display: block;
 }
+.nav-links #projectNav:hover .sub-nav{
+    display: block;
+}
 /*.nav-links li:hover{
 
     font-size: 18px;
@@ -427,7 +430,22 @@ svg {
 .fifth-cont p{
     color : #5dd3ff;
 }
-
+.content-7{
+    display: flex;
+       justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+}
+.content-7-2-split{
+    width: 50%;
+    padding: 25px;
+    color : #2e2e2e;
+}
+.content-part-2{
+    margin: 5px;
+}
 .input-cont{
     width: 100%;
     max-width: 350px;
@@ -457,6 +475,11 @@ svg {
     cursor: pointer;
     font-family: 'Ropa Sans', sans-serif;
     font-size: 18px;
+}
+.content-description{
+    background: #141726;
+    color: #fff;
+    border-radius: 10px;
 }
 .cont{
     justify-content: center;
