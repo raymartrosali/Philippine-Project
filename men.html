@@ -43,6 +43,9 @@
 					<ul class="sub-nav">
 						<li>
 							<div>
+								<a href="projects.html">Conference Center</a>
+							</div>
+							<div>
 								<a href="men.html">Centers for Men</a>
 							</div>
 							<div>
@@ -53,7 +56,7 @@
 					</ul>
 				</li>
 				<li><a href="#conference">Contacts</a></li>
-				<li><button class="btn-blue">Login</button></li>
+				<li><a class="modal__trigger" data-modal="#modal"><button class="btn-blue" >Login</button></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -202,6 +205,23 @@
 			</div>
 		</div>
 	</div>
+	<!-- Modals -->
+	<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Announcement</h1>
+				<p style="color: #4a4a4a">This part is not available yet.</p>
+				
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/modal.js"></script>
+	<!-- Modals -->
 	<!-- Lightbox -->
 	<script src="js/aos.js"></script>
 	<script src="js/lightbox-plus-jquery.min.js"></script>
