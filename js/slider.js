@@ -44,7 +44,7 @@ window.jssor_1_slider_init = function() {
                     jssor_1_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider, 10);
                 }
             }
 
