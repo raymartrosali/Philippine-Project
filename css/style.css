@@ -735,12 +735,18 @@ textarea{
     text-decoration: none;
     color: #fff;
 }
+.head-text{
+    font-size: 80px;
+}
 @media (max-width: 780px){
     .pc-only{
         display: none!important;
     }
     .logo-img{
         width: 150px;
+    }
+    .head-text{
+        font-size: 40px;
     }
     .mobile-only{
         display: inline-block!important;
