@@ -1,4 +1,4 @@
-window.jssor_1_slider_init = function() {
+ window.jssor_1_slider_init = function() {
 
             var jssor_1_SlideshowTransitions = [
               {$Duration:500,$Delay:12,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
@@ -44,7 +44,7 @@ window.jssor_1_slider_init = function() {
                     jssor_1_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 10);
+                    window.setTimeout(ScaleSlider, 30);
                 }
             }
 

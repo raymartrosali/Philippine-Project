@@ -269,6 +269,10 @@ button{
 	transition: 0.2s;
 	border: solid #fff 1.5px;
 }
+.btn-menu{
+    border-radius: 5px!important;
+    padding: 5px 15px!important;
+}
 .btn-white:hover{
 	background: transparent;
 	color: #fff;
@@ -438,7 +442,20 @@ svg {
     text-align: center;
     width: 800px;
 }
+.picture-7{
+    display: flex;
+       justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+}
 .content-7-2-split{
+    width: 50%;
+    padding: 25px;
+    color : #2e2e2e;
+}
+.picture-7-2-split{
     width: 50%;
     padding: 25px;
     color : #2e2e2e;
@@ -549,50 +566,33 @@ textarea{
 
 
 /*jssor slider loading skin spin css*/
-.jssorl-009-spin img {
-    animation-name: jssorl-009-spin;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+/*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
 
-@keyframes jssorl-009-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
 
-/*jssor slider bullet skin 053 css*/
-.jssorb053 .i {position:absolute;cursor:pointer;}
-.jssorb053 .i .b {fill:#fff;fill-opacity:0.3;}
-.jssorb053 .i:hover .b {fill-opacity:.7;}
-.jssorb053 .iav .b {fill-opacity: 1;}
-.jssorb053 .i.idn {opacity:.3;}
+        /*jssor slider bullet skin 053 css*/
+        .jssorb053 .i {position:absolute;cursor:pointer;}
+        .jssorb053 .i .b {fill:#fff;fill-opacity:0.3;}
+        .jssorb053 .i:hover .b {fill-opacity:.7;}
+        .jssorb053 .iav .b {fill-opacity: 1;}
+        .jssorb053 .i.idn {opacity:.3;}
 
-/*jssor slider arrow skin 093 css*/
-.jssora093 {display:block;position:absolute;cursor:pointer;}
-.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
-.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
-.jssora093:hover {opacity:.8;}
-.jssora093.jssora093dn {opacity:.6;}
-.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
-
-@media (max-width: 900px){
-    .multiple-cont{
-        display: inline;
-    }
-    .fifth-cont{
-        display: block;
-    }
-    .fifth-cont .item-char {
-        width: 100%;
-    }
-    .form-div{
-        padding-bottom: 20px;
-    }
-    .input-cont{
-        width: 80%;
-    }
-}
+        /*jssor slider arrow skin 093 css*/
+        .jssora093 {display:block;position:absolute;cursor:pointer;}
+        .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093:hover {opacity:.8;}
+        .jssora093.jssora093dn {opacity:.6;}
+        .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
 
 
 
@@ -618,6 +618,10 @@ textarea{
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition-delay: $modal-delay;
 }
+.map-modal{
+    max-width: 900px;
+    width: 100%;
+}
 .modal--active {
   visibility: visible;
   opacity: 1;
@@ -626,8 +630,8 @@ textarea{
   align-items: flex-start;
 }
 .modal__bg {
-    background: -webkit-linear-gradient(to right, rgb(33 147 176 / 0.5), rgb(109 213 237 / 0.5)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(33 147 176 / 0.5), rgb(109 213 237 / 0.5));
+    background: -webkit-linear-gradient(to right, #2193b0, #6dd5ed); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
 }
 .modal__dialog {
   max-width: 600px;
@@ -637,7 +641,7 @@ textarea{
   will-change: transform, opacity;
   position: relative;
   padding: 2.4rem;
-  background: #e2e2e2;
+  background: #ffebee;
   background-clip: padding-box;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
   opacity: 0;
@@ -658,11 +662,11 @@ textarea{
   left: 0;
   right: 0;
   bottom: 0;
-  background: transparent;
+  background: red;
   transform: none;
   opacity: 1;
   transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  height: 100vh;
+  height: 0px;
 }
 /**
  * Demo specific CSS
@@ -696,3 +700,73 @@ textarea{
 .demo-close:hover {
   background: rgba(0,0,0,0.6);
 }
+
+
+.pc-only{
+    display: inline-block;
+}
+.mobile-only{
+    display: none!important;
+}
+.logo-img{
+    width: 250px;
+}
+.mobile-menu{
+    background: #141726;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 45px;
+    position: fixed;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000;
+}
+.major-links{
+    border-top: solid 2px #39447a;
+    padding: 10px;
+}
+.sub-nav-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a-subnav{
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 780px){
+    .pc-only{
+        display: none!important;
+    }
+    .logo-img{
+        width: 150px;
+    }
+    .mobile-only{
+        display: inline-block!important;
+    }
+    .multiple-cont{
+        display: inline;
+    }
+    .fifth-cont{
+        display: block;
+    }
+    .fifth-cont .item-char {
+        width: 100%;
+    }
+    .form-div{
+        padding-bottom: 20px;
+    }
+    .input-cont{
+        width: 80%;
+    }
+    .content-7{
+        display: block;
+        width: 100%;
+    }
+    .content-7-2-split{
+        width: auto;
+        margin: 5px;
+    }
+}
+

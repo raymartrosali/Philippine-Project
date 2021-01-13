@@ -15,10 +15,10 @@
     
     <script src="js/slider.js" type="text/javascript"></script>
 	<header class="navbar">
-		<img src="img/Logo.png" width="250px" class="logo-img">
+		<img src="img/Logo.png" class="logo-img">
 		<nav>
 			<ul class="nav-links">
-				<li id="homeNav">
+				<li class="pc-only" id="homeNav">
 					<a href="index.html">Home</a>
 					<ul class="sub-nav">
 						<li>
@@ -38,7 +38,7 @@
 						
 					</ul>
 				</li>
-				<li id="projectNav">
+				<li class="pc-only" id="projectNav">
 					<a href="projects.html">Projects</a>
 					<ul class="sub-nav">
 						<li>
@@ -55,11 +55,63 @@
 						
 					</ul>
 				</li>
-				<li><a href="#conference">Contacts</a></li>
-				<li><a class="modal__trigger" data-modal="#modal"><button class="btn-blue" >Login</button></a></li>
+				<li class="pc-only"><a href="#contact">Contacts</a></li>
+				<li class="pc-only"><a class="modal__trigger" data-modal="#modal"><button class="btn-blue" >Login</button></a></li>
+				<li class="mobile-only"><button class="btn-blue btn-menu" id="mobile-button"><i class="fa fa-bars"></i></button></li>
 			</ul>
 		</nav>
 	</header>
+	<div class="mobile-only">
+		<div class="mobile-menu" style="display: none">
+			<div class="major-links sub-nav-mobile" id="home-mobile">
+				<div>
+					Home
+				</div>
+				<div>
+					<i class="fa fa-caret-left"></i>
+				</div>
+			</div>
+			<div class="major-links home-subnav" id="home-sub" style="display: none;">
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#news">News</a> 
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#whoweare">Who We Are</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#members">Our Members and Board of Trustees</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#pfced">PFCED and Opus Dei</a>
+				</div>
+			</div>
+			<div class="major-links sub-nav-mobile" id="project-mobile">
+				<div>
+					Projects
+				</div>
+				<div>
+					<i class="fa fa-caret-left"></i>
+				</div>
+			</div>
+			<div class="major-links project-subnav" id="project-sub" style="display: none;">
+				<div class="major-links">
+					<a class="a-subnav" href="projects.html">Conference Centers</a> 
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="men.html">Centers for Men</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="women.html">Centers for Women</a>
+				</div>
+			</div>
+			<div class="major-links">
+				<a class="a-subnav" href="#contact">Contacts</a>
+			</div>
+			<div class="major-links">
+				Login
+			</div>
+		</div>
+	</div>
 	<section class="content-1">
 		<div class="content-items">
 			<h1 style="font-size: 80px">Centers for Women</h1>
@@ -116,7 +168,7 @@
 
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc1"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> 
@@ -133,7 +185,7 @@
 
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc2"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 		<section class="content-7">
@@ -149,7 +201,7 @@
 					15 Campanilla cor. Balete New Manila<br> Quezon City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc3"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> Linang <br>Center</h3>
@@ -163,7 +215,7 @@
 					10 Hilltop St., Horseshoe Village, <br>Quezon City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc4"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 	</section>
@@ -181,7 +233,7 @@
 					2388 Leon Guinto St.,<br> Malate Manila
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc5"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> Melantic <br>Center</h3>
@@ -195,7 +247,7 @@
 					17 Melantic St., San Lorenzo Village<br> Makati City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc6"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 		<section class="content-7">
@@ -211,7 +263,7 @@
 					2388 Leon Guinto St.,<br> Malate Manila
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc7"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> Palihan <br>Center</h3>
@@ -225,7 +277,7 @@
 					Bo. Milagrosa Calamba <br>Laguna
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc8"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 	</section>
@@ -243,7 +295,7 @@
 					A222 Alexandra Condominium, Amber St.<br> Pasig City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc9"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> Sampaguita <br>Center</h3>
@@ -257,7 +309,7 @@
 					Balete cor. Sampaguita St. New Manila,<br> Quezon City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc10"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 		<section class="content-7">
@@ -273,7 +325,7 @@
 					2388 Leon Guinto St. Malate<br>Manila
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc11"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 			<div class="content-7-2-split content-description content-part-2" style="display: block;">
 				<h3 class="text-blue" style="margin: 0px 5px"> Tanglaw <br>Activity Center</h3>
@@ -287,7 +339,7 @@
 					54 Examiner St. West Triangle <br>Quezon City
 				</p>
 				
-				<a href="https://opusdei.org/en/section/what-is-opus-dei/"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
+				<a class="modal__trigger" data-modal="#modal_loc12"><button class="btn-blue"><i class="fa fa-map-marker"></i> Google Map Location</button></a>
 			</div>
 		</section>
 	</section>
@@ -299,7 +351,7 @@
 			<font class="nameQuote">-St. Josemaria Escriva</font>
 		</div>
 	</section>
-	<div class="cont">
+	<div id="contact" class="cont">
 		<div class="fifth-cont">
 			<div class="item-char">
 				<div class="item-content form-div">					
@@ -341,7 +393,206 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/modal.js"></script>
+	<div id="modal_loc1" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Belair Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.711069223766!2d121.03104631431984!3d14.558508182011046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c901d73ddd2b%3A0x61ee0ea3964e481c!2s26%20Jupiter%2C%20Makati%2C%201209%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265283059!5m2!1sen!2sph" width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc2" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Calayan Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2142658141893!2d121.04142401432009!3d14.586863181325022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8312ceb4d67%3A0x7458dd6fa5b8383f!2sFirst%20Metro%20Strata!5e0!3m2!1sen!2sph!4v1610265343922!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc3" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Campanilla Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5839919571254!2d121.03399481432047!3d14.622758580454779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ca86527085%3A0xc5807327ba9e8435!2s15%20Campanilla%2C%20New%20Manila%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265409974!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc4" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Linang Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.7763229048824!2d121.04008311432032!3d14.61181408072032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7d02cca33b7%3A0x48e25902606c6e12!2s10%20Hill%20Top%2C%20Quezon%20City%2C%201112%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265479153!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc5" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Maligaya Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5766621070106!2d120.99253601431988!3d14.566184781825426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c978be21ca29%3A0x96d87552f7d98c44!2s2388%20Leon%20Guinto%20St%2C%20Malate%2C%20Manila%2C%201004%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265544633!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc6" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Melantic Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8737126025508!2d121.01500121431962!3d14.549213582235673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c911426e1c35%3A0x8479764d7ed3ce29!2s17%20Melantic%2C%20Makati%2C%20Kalakhang%20Maynila!5e0!3m2!1sen!2sph!4v1610265614761!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc7" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Namayan Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5766621070106!2d120.99253601431988!3d14.566184781825426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c978be21ca29%3A0x96d87552f7d98c44!2s2388%20Leon%20Guinto%20St%2C%20Malate%2C%20Manila%2C%201004%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265693251!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc8" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Palihan Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15473.372434573557!2d121.12821691970615!3d14.174671195680682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd647859a5006f%3A0x6ad09cc8b77f4cb1!2sMilagrosa%2C%20Calamba%2C%204027%20Laguna!5e0!3m2!1sen!2sph!4v1610265750833!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc9" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Palmcrest Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3153763436953!2d121.06023791432008!3d14.58109668146467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c81386f40b5b%3A0x445eff4f20214bff!2sBuilding%20C1%20Alexandra%20Condominium!5e0!3m2!1sen!2sph!4v1610265820329!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc10" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Sampaguita Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5963273658035!2d121.03424471432047!3d14.62205688047178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ca6015c6b7%3A0xdc5437ba7846e889!2sBalete%20Drive%20%26%20Sampaguita%2C%20New%20Manila%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265873301!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc11" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Tahilan Study Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5766621070106!2d120.99253601431988!3d14.566184781825426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c978be21ca29%3A0x96d87552f7d98c44!2s2388%20Leon%20Guinto%20St%2C%20Malate%2C%20Manila%2C%201004%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1610265933814!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<div id="modal_loc12" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<h1 class="text-blue">Google Map Location</h1>
+				<p style="color: #4a4a4a">Tanglaw Activity Center</p>
+				<div class="map-modal">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.237620828481!2d121.02997611432065!3d14.642448479976544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b655170140e5%3A0x9a2a88b6da6d7bff!2s54%20Examiner%2C%20Diliman%2C%20Lungsod%20Quezon%2C%20Kalakhang%20Maynila!5e0!3m2!1sen!2sph!4v1610266006568!5m2!1sen!2sph"width="100%" height="300px" style="border:0;margin:0;padding:0;display:block"></iframe>
+				</div>
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/mobile.js"></script>	
 	<!-- Modals -->
 	<!-- Lightbox -->
 	<script src="js/aos.js"></script>
@@ -353,6 +604,7 @@
     </script>
     <script type="text/javascript">jssor_1_slider_init();
     </script>
+    <script src="js/modal.js"></script>
 	<!-- Lightbox -->
 </body>
 </html>

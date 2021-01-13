@@ -13,12 +13,11 @@
 <body>
 	<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
     
-    <script src="js/slider.js" type="text/javascript"></script>
     <header class="navbar">
-		<img src="img/Logo.png" width="250px" class="logo-img">
+		<img src="img/Logo.png" class="logo-img">
 		<nav>
 			<ul class="nav-links">
-				<li id="homeNav">
+				<li class="pc-only" id="homeNav">
 					<a href="index.html">Home</a>
 					<ul class="sub-nav">
 						<li>
@@ -38,7 +37,7 @@
 						
 					</ul>
 				</li>
-				<li id="projectNav">
+				<li class="pc-only" id="projectNav">
 					<a href="projects.html">Projects</a>
 					<ul class="sub-nav">
 						<li>
@@ -55,11 +54,63 @@
 						
 					</ul>
 				</li>
-				<li><a href="#conference">Contacts</a></li>
-				<li><a class="modal__trigger" data-modal="#modal"><button class="btn-blue" >Login</button></a></li>
+				<li class="pc-only"><a href="#contact">Contacts</a></li>
+				<li class="pc-only"><a class="modal__trigger" data-modal="#modal"><button class="btn-blue" >Login</button></a></li>
+				<li class="mobile-only"><button class="btn-blue btn-menu" id="mobile-button"><i class="fa fa-bars"></i></button></li>
 			</ul>
 		</nav>
 	</header>
+	<div class="mobile-only">
+		<div class="mobile-menu" style="display: none">
+			<div class="major-links sub-nav-mobile" id="home-mobile">
+				<div>
+					Home
+				</div>
+				<div>
+					<i class="fa fa-caret-left"></i>
+				</div>
+			</div>
+			<div class="major-links home-subnav" id="home-sub" style="display: none;">
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#news">News</a> 
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#whoweare">Who We Are</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#members">Our Members and Board of Trustees</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="index.html#pfced">PFCED and Opus Dei</a>
+				</div>
+			</div>
+			<div class="major-links sub-nav-mobile" id="project-mobile">
+				<div>
+					Projects
+				</div>
+				<div>
+					<i class="fa fa-caret-left"></i>
+				</div>
+			</div>
+			<div class="major-links project-subnav" id="project-sub" style="display: none;">
+				<div class="major-links">
+					<a class="a-subnav" href="projects.html">Conference Centers</a> 
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="men.html">Centers for Men</a>
+				</div>
+				<div class="major-links">
+					<a class="a-subnav" href="women.html">Centers for Women</a>
+				</div>
+			</div>
+			<div class="major-links">
+				<a class="a-subnav" href="#contact">Contacts</a>
+			</div>
+			<div class="major-links">
+				Login
+			</div>
+		</div>
+	</div>
 	<section class="content-1">
 		<div class="content-items">
 			<h1>The <font class="highlight-heading-1">Philippine Foundation</font>
@@ -74,13 +125,18 @@
 			<svg class="wave-qsoVIt" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-22lfEN" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path></svg>
 		</div>
 	</section>
+
+    <script src="js/slider.js" type="text/javascript"></script>
 	<section class="size-manip" id="news">
-		<section class="content-2 ">
+		<section class="content-2 " style="width: auto;">
 			<h1>
 				News
 			</h1>
 			<hr size="5" align="center">
-			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+			
+		</section>
+	</section>
+	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
 		        <!-- Loading Screen -->
 		        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 		            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -129,8 +185,6 @@
 		            </svg>
 		        </div>
 		    </div>
-		</section>
-	</section>
 	<section class="size-manip" id="whoweare">
 		<section class="content-2 ">
 			<h1>
@@ -140,7 +194,7 @@
 			<p>
 				Philippine Foundation for Cultural and Educational Development, Inc. (PFCED) was incorporated and registered with the SEC on June 25, 1965 as a non-stock, not-for-profit organization. The incorporators dreamt of the Foundation as a catalyst for values transformation and education. PFCED committed itself to the promotion of academic excellence, professional proficiency, as well as social responsibility among people from all walks of life.
 				<br><br> 
-				PFCED’s vision, mission and the goals it had set out to achieve found support from the business community, which believed that good values make good business sense, as well as from professionals in various fields. In addition, it gained support from international funding agencies. 
+				PFCED's vision, mission and the goals it had set out to achieve found support from the business community, which believed that good values make good business sense, as well as from professionals in various fields. In addition, it gained support from international funding agencies. 
 			</p>
 			<br>	
 			<h1>
@@ -368,7 +422,7 @@
 	<br>
 	<br>
 	
-	<div class="cont">
+	<div id="contact" class="cont">
 		<div class="fifth-cont">
 			<div class="item-char">
 				<div class="item-content form-div">					
@@ -410,10 +464,14 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- Modals -->
 	<!-- Lightbox -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/mobile.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/lightbox-plus-jquery.min.js"></script>
+	
 	<script>
       AOS.init({
         easing: 'ease-in-out-sine'
